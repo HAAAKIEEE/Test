@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BUndang</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&family=Sacramento&family=Work+Sans:wght@100;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- simply countdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- halaman awal -->
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <main>
+        <h1>Anang & Galuh</h1>
+        <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+        <p>Akan melangsungkan resepsi pernikahan</p>
+        <div class="simply-countdown"></div>
+        <a href="#home" class="btn btn-lg mt-4">Lihat Undangan</a>
+      </main>
+    </section>
+    <!-- halaman awal berakhir -->
+
+    <!-- navbar -->
+    <!-- stciky  top untuk ke posisi bawah kada di atad -->
+    <!-- expand untuk kelihatan di layar lebar -->
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <!-- brand -->
+        <a class="navbar-brand logo" href="#">AG</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <!-- header -->
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title">AG</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- body -->
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gif">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar berakhir -->
+
+    <!-- home -->
+
+    <section id="home" class="home">
+      <div class="contianer">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Acara pernikahan</h2>
+            <h3>
+              Diselengarakan pada 20 Agustus 2025 di Banjarmasin, Kalimantan
+              Selatan.
+            </h3>
+            <p>
+              Oleh karna itu, dengan segala hormat, kami bermaksud untuk
+              mengundang Bapak/ibu,<br />Saudara/i, untuk hadir pada acara
+              pernikahan kami.
+            </p>
+          </div>
+        </div>
+
+        <div class="row couple">
+          <!-- foto laki -->
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Anang</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                  quia magni adipisci quo unde modi.
+                </p>
+                <p>
+                  putra dari bapak <br />dan <br />
+                  ibu
+                </p>
+              </div>
+              <div class="col-4">
+                <img
+                  src="img/propil.jpg"
+                  alt="ahay"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- fotobini -->
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img
+                  src="img/propil.jpg"
+                  alt="ahay"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+              <div class="col-8">
+                <h3>Galuh</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                  quia magni adipisci quo unde modi.
+                </p>
+                <p>
+                  putra dari bapak <br />dan <br />
+                  ibu
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- home berakhir -->
+
+    <!-- inpo -->
+
+    <section style="background-color: white!important; margin-top: -5px; margin-bottom: -5px;" id="info" class="info">
+      <div class="container">
+          <div class="text-center">
+              <h1 class="font-estetik py-3" style="font-size: 6rem; font-family: 'Sacramento'; color: #f14e95;">Waktu Menuju Acara</h1>
+              <!-- countdown -->
+                  <div class="row justify-content-center text-white simply-countdown "></div>
+
+              <p style="font-size: 0.9rem;" class="mt-4 py-2">
+                  Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, insyaAllah kami akan menyelenggarakan
+                  acara :
+              </p>
+
+              <div class="overflow-x-hidden">
+                  <div class="py-2" data-aos="fade-left" data-aos-duration="1500">
+                      <h1 class="font-estetik" style="font-size: 2rem;">Akad</h1>
+                      <p>Pukul 10.00 WIB - Selesai</p>
+                  </div>
+
+                  <div class="py-2" data-aos="fade-right" data-aos-duration="1500">
+                      <h1 class="font-estetik" style="font-size: 2rem;">Resepsi</h1>
+                      <p>Pukul 13.00 WIB - Selesai</p>
+                  </div>
+              </div>
+
+              <div class="py-2" data-aos="fade-up" data-aos-duration="1500">
+                  <a href="https://goo.gl/maps/ALZR6FJZU3kxVwN86" target="_blank" class="btn btn-outline-light btn-sm rounded-pill shadow-sm mb-2 px-3">
+                     Lihat Google Maps
+                  </a>
+                  <p class="mb-0 mt-1 mx-1 pb-4" style="font-size: 0.9rem;">
+                    Jl. Alalak Selatan , RT.9 RW.1, Alalak Selatan, Kec. Banjarmasin Utara, Kota Banjarmasin, Kalimantan Selatan 70126.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- info berakhir  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- countdown -->
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2025, // required
+        month: 8, // required
+        day: 20, // required
+        hours: 8, // Default is 0 [0-23] integer
+        minutes: 0, // Default is 0 [0-59] integer
+        seconds: 0, // Default is 0 [0-59] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "Hari", plural: "Hari" },
+          hours: { singular: "Jam", plural: "Jam" },
+          minutes: { singular: "Menit", plural: "Menit" },
+          seconds: { singular: "Detik", plural: "Detik" },
+        },
+      });
+    </script>
+  </body>
+</html>

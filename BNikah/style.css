@@ -1,0 +1,202 @@
+:root{
+    --pink: #f14e95;
+    --bg:#0a0a0a;
+    --shadow: 0 2px 2px rgb(0 0 0/0.5);
+}
+
+
+body{
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    min-height: 1000vh;
+}
+
+/* halaman awal */
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/bg-wediing.jpg);
+    /* untuk mengecil */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+.hero h1, .hero h4, .hero p{
+    text-shadow:  var(--shadow);
+
+}
+.hero{
+ 
+    position: relative;
+    min-height: 100vh;
+}
+.hero h1{
+    font-family: 'Parisienne';
+    font-size:7rem ;
+}
+
+.hero h4{
+    font-size: 1.6rem;
+}
+
+.hero p{
+    font-size: 1.4rem;
+}
+
+.hero a{
+   background-color: var(--pink);
+   color: white; 
+}
+
+.hero a:hover{
+    background-color: white;
+    color:var(--pink); 
+ }
+
+/* halaman awal berakhir */
+
+/* navbar */
+.mynavbar{
+    background-color: rgba(255,255 ,255 ,0.2 alpha)!important; 
+     backdrop-filter: blur(3px); 
+}
+
+.mynavbar .logo{
+    color: #f14e95;
+}
+
+.mynavbar .offcanvas{
+    height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title{
+font-family: 'Parisienne' ;
+font-size: 3.2rem;
+
+
+}
+
+.mynavbar .nav-link{
+    text-transform: uppercase;
+}
+/* navbar end */
+
+/* home */
+.home{
+    background-image: url(img/bgg.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin-top: -6.4rem;
+    padding-top: 15rem;
+    margin-bottom: 3rem;
+}
+.home h2{
+    font-family: 'Sacramento';
+    font-size: 6rem;
+    color: #f14e95;
+}
+
+.home h3{
+    font-size: 1.6rem;
+
+}
+.home p{
+    font-size: 1rem;
+    color: #7e7d7d;
+}
+
+/*home foto pengantin */
+.home .couple {
+margin-top: 100px; 
+margin-right: 50px;
+margin-left: 50px;
+margin-top: 20px;
+}
+
+.home .couple h3{
+font-family: 'Parisienne';
+font-weight: 500;
+font-size: 2.4rem;
+color: #f14e95;
+}
+
+.home .couple img{
+   width: 100%;
+   margin-top: 20px;
+    }
+
+    /* info */
+.info{
+    margin-top: 100px;
+    padding: 110px;
+}
+
+.info a{
+    background-color: var(--pink);
+    color: white; 
+ }
+ 
+ .info a:hover{
+     background-color: white;
+     color:var(--pink); 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query / responsife */
+/* leptop */
+@media (max-width: 922px) {
+    html{
+        font-size: 75%;
+    }
+    .simply-countdown>.simply-section {
+        padding: 50px;
+}}
+/* tablet */
+
+@media (max-width: 768px) {
+    html{
+        font-size: 65%;
+    }
+
+    .simply-countdown>.simply-section {
+        padding: 30px;
+        margin: 5px;
+}
+
+.mynavbar .nav-link{
+   font-size: 2rem;
+   text-align: center;
+}
+}
+/* mobile phone */
+
+@media (max-width: 576px) {
+    html{
+        font-size:55%;
+    }
+    .simply-countdown>.simply-section {
+        padding: 20px;
+        margin: 3px;
+}
+}
